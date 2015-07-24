@@ -4,6 +4,7 @@ Module for decoding NMEA sentences of GPS devices with Lua. Also works with
 LuaJIT.
 The "decode" method allows extract information from NMEA sentences (line
 is a group of them) and returns a table with relevant information.
+Based on Julien Vermillard work: [lua-nmea](https://github.com/jvermillard/lua-nmea)
 
 ## Example of use
 
