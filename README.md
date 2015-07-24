@@ -8,6 +8,8 @@ Based on Julien Vermillard work: [lua-nmea](https://github.com/jvermillard/lua-n
 
 ## Example of use
 
+Content of `test.lua`
+
 ```lua
 
 local GPS = require "gps_nmea"
@@ -20,9 +22,31 @@ $GPRMC,092751.000,A,5321.6802,N,00630.3371,W,0.06,31.66,280511,,,A*45
 ]]
 
 local t = GPS.Decode(line)
-print(t)
+
 for k,v in pairs(t) do
   print(k, v)
 end
 
 ```
+
+Output
+
+
+```lua
+
+mode1   A
+course  31.66
+speed   0.11112
+hour    9
+second  51
+longitude   -6.5056183333333
+latitude    53.361336666667
+day 28
+month   5
+status  A
+mode2   3
+year    11
+minute  27
+
+```
+
